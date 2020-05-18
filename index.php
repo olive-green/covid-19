@@ -33,7 +33,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <title>Document</title>
+    <title>Corona Tracker</title>
     <link rel="stylesheet" href="index2.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
@@ -88,16 +88,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#overview">Overview </a>
+          <a class="nav-link" href="#Overview">Overview </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#prevention">prevention</a>
+          <a class="nav-link" href="#Prevention">Prevention</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#symtoms">Symptoms</a>
+          <a class="nav-link" href="#Symptoms">Symptoms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#stats">Stats</a>
+          <a class="nav-link" href="#Stats">Stats</a>
         </li>
       </ul>
             <ul class="navbar-nav nav-flex-icons">
@@ -203,7 +203,7 @@
 		
 		<section id="symtoms">
 		<br><br>
-		 <h2>symtoms</h2>
+		 <h2>Symptoms</h2>
         <div class="symptoms samedata">
             <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate
                 illness and recover without hospitalization.</p>
@@ -245,6 +245,7 @@
         <div class="time">
             <h5>
 			<?php
+			date_default_timezone_set('Asia/Kolkata');
 			echo date('d M ,h:i A ').'IST';
 			
 			?>
