@@ -75,6 +75,9 @@ img{
     width:100%
 }
 
+.time::before{
+    content:"Last Update";
+}
 .time{
     display: flex;
     flex-direction: row;
@@ -84,8 +87,7 @@ img{
 
 .Level {
     display:flex;
-    width: 50%;
-    border:2px solid;
+    
     margin:auto;
 }
  .level-item{
@@ -189,4 +191,22 @@ table tbody tr {
 }
 table tbody td .total {
     margin-left: .25rem;
+}
+
+@media (max-width:600px){
+    .level-item{
+        width:100%;
+        margin: 0 2px;
+    }
+   
+    .symptoms{
+        width:100%;
+    }
+    .prevention{
+        width:100%;
+    }
+    .overview{
+        width:100%;
+    }
+   
 }
