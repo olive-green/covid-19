@@ -26,7 +26,7 @@ p{
     
 }
 .samedata{
-    width:80%;
+   
     border:2px solid red;
 	border-radius:20px;
     margin:8px;
@@ -75,9 +75,6 @@ img{
     width:100%
 }
 
-.time::before{
-    content:"Last Update";
-}
 .time{
     display: flex;
     flex-direction: row;
@@ -87,7 +84,8 @@ img{
 
 .Level {
     display:flex;
-    
+    /*width: 50%;*/
+   /* border:2px solid;*/
     margin:auto;
 }
  .level-item{
@@ -95,6 +93,8 @@ img{
     flex-direction: column;
     width: 25%;
 }
+
+
 
 .Level .level-item>* {
     align-self: center;
@@ -189,24 +189,20 @@ table tbody td {
 table tbody tr {
     cursor: pointer;
 }
+
 table tbody td .total {
-    margin-left: .25rem;
+    float:left
+	
 }
 
-@media (max-width:600px){
-    .level-item{
-        width:100%;
-        margin: 0 2px;
-    }
-   
-    .symptoms{
-        width:100%;
-    }
-    .prevention{
-        width:100%;
-    }
-    .overview{
-        width:100%;
-    }
-   
+.table_container
+{
+	overflow:scroll;
+}
+@media only screen and (max-width:600px)
+{
+
+	.level-item>h1,h5{
+     font-size:1.0em!important;	
+     }
 }

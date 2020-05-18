@@ -33,7 +33,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <title>Corona Tracker</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index2.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
@@ -88,16 +88,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#Overview">Overview </a>
+          <a class="nav-link" href="#overview">Overview </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Prevention">Prevention</a>
+          <a class="nav-link" href="#prevention">prevention</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Symptoms">Symptoms</a>
+          <a class="nav-link" href="#symtoms">Symptoms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Stats">Stats</a>
+          <a class="nav-link" href="#stats">Stats</a>
         </li>
       </ul>
             <ul class="navbar-nav nav-flex-icons">
@@ -133,7 +133,7 @@
     </div>
 
     <div class="container">
-	<br><br>
+	
 	   <section id="overview">
 	   <br><br>
 	   <h2>Overview</h2>
@@ -203,7 +203,7 @@
 		
 		<section id="symtoms">
 		<br><br>
-		 <h2>Symptoms</h2>
+		 <h2>symtoms</h2>
         <div class="symptoms samedata">
             <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate
                 illness and recover without hospitalization.</p>
@@ -245,13 +245,13 @@
         <div class="time">
             <h5>
 			<?php
-			date_default_timezone_set('Asia/Kolkata');
+				date_default_timezone_set('Asia/Kolkata');
 			echo date('d M ,h:i A ').'IST';
 			
 			?>
 			</h5>
         </div>
-        <div class="Level">
+       <div class="Level">
             <div class="confirmed level-item is-cherry fadeInUp">
                 <h5>Confirmed</h5>
                
@@ -273,7 +273,8 @@
                 <h1 class="title has-text-grey"><?php echo $death; ?></h1>
             </div>
         </div>
-
+        
+		<div class="table_container">
         <table class="table">
             <thead>
                 <tr>
@@ -322,6 +323,7 @@
             </tbody>
           
         </table>
+		</div>
     </div>
 	</section>
 	 
